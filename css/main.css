@@ -1,0 +1,117 @@
+@import 'normalize.css';
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	background: url(../img/paper.jpg) repeat 0 0;
+
+}
+body {
+	height: 100%;
+	width: 100%;
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 85%, rgba(0,0,0,0.35) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(85%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.35))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 85%,rgba(0,0,0,0.35) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 85%,rgba(0,0,0,0.35) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 85%,rgba(0,0,0,0.35) 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 85%,rgba(0,0,0,0.35) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#59000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+	font-family: monospace;
+	font-size: 32px;
+	line-height: 1.5;
+	color: #000;
+	display: table;
+}
+body:before,
+body:after {
+	content: " ";
+	display: table;
+}
+body:after {
+	clear: both;
+}
+h1 {
+	font-size: 4vw;
+	line-height: 1.1;
+	margin: 0;
+}
+h2 {
+	color: #7d5a12;
+	font-size: 1.5vw;
+}
+.page-header {
+	float: left;
+	width: 33%;
+	height: 100%;
+	display: table;
+	text-align: center;
+}
+.page-header__wrapper {
+	display: table-row;
+}
+.page-title {
+	display: table-cell;
+	vertical-align: middle;
+}
+.identity {
+	display: block;
+	width: 100%;
+}
+.page-title span {
+	font-family: 'Squada One', Verdana, sans-serif;
+}
+/*.page-header,
+.container {
+	text-shadow: 0 1px #e2c68c;
+}*/
+
+.container {
+	float: right;
+	width: 66%;
+	height: 100%;
+	display: table;
+}
+.page-main-content {
+	display: table-row;
+}
+.page-footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 0 40px 40px 0;
+	text-align: right;
+	color: #7d5a12;
+	font-size: 0.5em;
+}
+.page-footer img {
+	width: 52px;
+	height: 25px;
+	vertical-align: baseline;
+	display: inline-block;
+	position: relative;
+	top: 3px;
+}
+.page-footer small {
+	display: block;
+}
+
+/* Event */
+.event {
+	display: table-cell;
+	vertical-align: middle;
+}
+.event__title {
+	font-size: 6vw;
+	line-height: 1;
+	margin: 0;
+}
+.event__details {
+	font-size: 3vw;
+}
